@@ -1,0 +1,328 @@
+@import url('https://necolas.github.io/normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Oswald:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    text-decoration: none;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    line-height: 1.7rem;
+    background: #faf8f4;
+    position: relative;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.2;
+    font-family: 'Heebo';
+    color: black;
+}
+
+p {
+    font-family: 'Roboto';
+    font-size: 14.5;
+}
+
+a {
+    color: whitesmoke;
+}
+
+.vl {
+    border-left: 0.5px solid greenyellow;
+    height: 40px;
+    margin-left: 50px;
+}
+
+/*nav*/
+.header-nav {
+    background: linear-gradient(90deg, rgba(0, 2, 9, 0.7), rgba(92, 102, 140, 0.7)), url('../img/section.jpg') no-repeat;
+    background-size: cover;
+}
+
+header {
+        background: linear-gradient(grey, rgb(60, 68, 84)), url('../img/backgroun-nav.jpg') no-repeat;
+
+    border-bottom: 0.1px solid white;
+    color: whitesmoke;
+    overflow: hidden;
+    border-bottom: 1 solid greenyellow;
+}
+
+header .container {
+    width: 90%;
+    margin: auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .social a {
+    color: whitesmoke;
+}
+
+header .contact i {
+    margin: 0px 20px;
+}
+
+header .fa-brands {
+    margin-right: 40px;
+    font-size: 20px;
+}
+
+header .contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+nav {
+    color: white;
+    padding-bottom: 9px;
+    /* background: linear-gradient(rgb(60, 68, 84), grey), url('../img/backgroun-nav.jpg') no-repeat;
+    background-position: center;
+    background-size: cover; */
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.active-nav {
+    background: white;
+    margin: 0;
+    top: 0;
+    position: fixed;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+
+}
+
+nav .container {
+    width: 70%;
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1 greenyellow solid;
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+
+nav a {
+    margin-right: 40px;
+    color: whitesmoke;
+    text-decoration: none;
+
+}
+
+.active-nav a {
+    color: rgb(48, 47, 47);
+}
+
+
+nav a:hover {
+    color: grey;
+    transition: 0.1s;
+}
+
+
+/*showcase*/
+#showcase {
+    color: white;
+    border-bottom: 0.5px solid white;
+    min-height: 250px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#showcase .container {
+    margin-top: 160px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+#showcase h1 {
+    font-size: 80px;
+    color: whitesmoke;
+}
+
+
+#showcase p {
+    width: 60%;
+    margin: auto;
+    font-size: 14px;
+    line-height: 26px;
+
+}
+
+#showcase span {
+    color: greenyellow;
+}
+
+#showcase button {
+    padding: 3px 9px;
+    font-weight: bold;
+    font-size: 19px;
+    border: 0.2px greenyellow solid;
+    border-radius: 0px;
+    color: white;
+    cursor: pointer;
+    background: greenyellow;
+
+}
+
+#showcase button:hover {
+    border-color: white;
+}
+
+/*projects*/
+.projects {
+    color: #616161;
+    text-align: center;
+}
+
+.projects .container {
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.projects .project-box {
+
+    width: 300px;
+    margin: 30px 30px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.projects img {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.projects .vr {
+    border-bottom: 2px solid greenyellow;
+    width: 170px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.projects h3 {
+    font-size: 30px;
+}
+
+.projects p {
+    width: 270px;
+    margin: auto;
+}
+
+
+/*footer*/
+footer {
+    bottom: 0px;
+    width: 100%;
+    color: whitesmoke;
+    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('../img/backgroun-nav.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    bottom: 0;
+    overflow: hidden;
+}
+
+footer .main-content {
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    line-height: 2rem;
+    border-bottom: 0.5px solid white;
+}
+
+footer .main-content img {
+    margin-bottom: 20px;
+}
+
+footer .main-content h2 {
+    margin: 30px 0px;
+    color: whitesmoke;
+}
+
+.main-content .left-box {
+    margin-right: 30px;
+    width: 350px;
+    margin-bottom: 30px;
+
+}
+
+.main-content .center-box {
+    margin-right: 30px;
+    width: 150px;
+    margin-bottom: 30px;
+}
+
+
+.main-content .right-box {
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+
+.left-box img {
+    display: block;
+    margin: auto;
+}
+
+.main-content .social {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main-content .social a {
+    margin-right: 25px;
+    font-size: 20px;
+
+}
+
+.main-content .social a:hover {
+    color: greenyellow;
+
+}
+
+.main-content .links a:hover {
+    color: greenyellow;
+}
+
+.main-content .fa-solid {
+    margin-right: 10px;
+}
+
+.copyright {
+    margin: 12px 0px;
+    text-align: center;
+}

@@ -1,0 +1,653 @@
+@import url('https://necolas.github.io/normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Oswald:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    text-decoration: none;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    line-height: 1.7rem;
+    background: #faf8f4;
+    position: relative;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.2;
+    font-family: 'Heebo';
+}
+
+p {
+    font-family: 'Roboto';
+}
+
+a {
+    color: whitesmoke;
+}
+
+.vl {
+    border-left: 0.5px solid greenyellow;
+    height: 40px;
+    margin-left: 50px;
+}
+
+.header-nav {
+    background: linear-gradient(90deg, rgba(0, 2, 9, 0.7), rgba(92, 102, 140, 0.7)), url('../img/section.jpg') no-repeat center center;
+    position: relative;
+    background-size: cover;
+    animation: change 15s infinite ease-in-out;
+}
+
+
+header {
+    background: linear-gradient(grey, rgb(60, 68, 84)), url('../img/backgroun-nav.jpg') no-repeat;
+
+    border-bottom: 0.1px solid white;
+    color: whitesmoke;
+    overflow: hidden;
+    border-bottom: 1 solid greenyellow;
+}
+
+header .container {
+    width: 90%;
+    margin: auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .social a {
+    color: whitesmoke;
+}
+
+header .contact i {
+    margin: 0px 20px;
+}
+
+header .fa-brands {
+    margin-right: 40px;
+    font-size: 20px;
+}
+
+header .contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@keyframes change {
+    0% {
+        background-image: url('/volec.siteweb/img/section.jpg');
+    }
+
+    20% {
+        background-image: url('/volec.siteweb/img/section-1.png');
+
+    }
+
+    40% {
+        background-image: url('/volec.siteweb/img/section-2.jpg');
+
+    }
+
+    60% {
+        background-image: url('/volec.siteweb/img/section-3.jpg');
+    }
+
+    80% {
+        background-image: url('/volec.siteweb/img/section.jpg');
+    }
+
+    100% {
+        background-image: url('/volec.siteweb/img/section-1.png');
+    }
+}
+
+/*nav*/
+nav {
+    color: white;
+    padding-bottom: 9px;
+    background: linear-gradient(rgb(60, 68, 84), grey), url('./img/backgroun-nav.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.active-nav {
+    background: white;
+    margin: 0;
+    top: 0;
+    position: fixed;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+
+}
+
+nav .container {
+    width: 70%;
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1 greenyellow solid;
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+
+nav a {
+    margin-right: 40px;
+    color: whitesmoke;
+    text-decoration: none;
+
+}
+
+.active-nav a {
+    color: rgb(48, 47, 47);
+}
+
+
+nav a:hover {
+    color: grey;
+    transition: 0.1s;
+}
+
+/*showcase*/
+#showcase {
+    color: white;
+    border-bottom: 0.5px solid white;
+    min-height: 600px;
+    overflow: hidden;
+}
+
+#showcase .container {
+    width: 50%;
+    margin-left: 80px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+#showcase h1 {
+    padding: 0px;
+    margin-bottom: 20px;
+    font-size: 90px;
+    letter-spacing: 7px;
+}
+
+#showcase h1 span {
+    color: greenyellow;
+
+}
+
+#showcase p {
+    margin: auto;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#showcase button {
+    padding: 9px 14px;
+    font-weight: bold;
+    font-size: 19px;
+    border: 0.2px greenyellow solid;
+    border-radius: 0px;
+    color: white;
+    cursor: pointer;
+    background: greenyellow;
+
+}
+
+#showcase button:hover {
+    border-color: white;
+}
+
+/*company*/
+.company {
+    color: #616161;
+    text-align: center;
+}
+
+.company .container {
+    width: 72%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+
+.company h1 {
+    font-size: 50px;
+}
+
+.company img {
+    margin: 25px 0px;
+    height: 350px;
+}
+
+
+.company button {
+    margin-top: 20px;
+    padding: 9px 14px;
+    font-weight: bold;
+    font-size: 19px;
+    border: 0.2px greenyellow solid;
+    border-radius: 0px;
+    color: white;
+    cursor: pointer;
+    background: greenyellow;
+
+}
+
+.company button:hover {
+    border-color: white;
+}
+
+/*services*/
+#services {
+    /* background: linear-gradient(90deg, rgba(4, 9, 30, 0.7), rgba(92, 102, 140, 0.7)), url('../img/background-services.jpg') no-repeat;
+    background-position: center;
+    background-size: cover; */
+    color: #616161;
+    border-bottom: 0.5px solid white;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+#services .container-services {
+    margin-top: 40px;
+}
+
+#services .services-title {
+    margin-bottom: 50px;
+}
+
+.boxs .container-boxs {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.box {
+    width: 260px;
+    margin: 30px 30px;
+    border: solid greenyellow;
+}
+
+.box img {
+    width: 100%;
+    height: 200px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.box img:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+.box h1 {
+    font-size: 18px;
+    margin: 20px 5px;
+}
+
+.box p {
+    width: 100%;
+    margin: auto;
+    /* color: #999; */
+}
+
+.box button {
+    color: white;
+    cursor: pointer;
+    background-color: greenyellow;
+    margin: 10px 0px;
+    padding: 10px 12px;
+    border: none;
+    font-weight: bold;
+}
+
+/*projects*/
+.projects {
+    color: #616161;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.projects .container {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.projects .project-box {
+
+    width: 260px;
+    margin: 30px 30px;
+    border: solid greenyellow;
+}
+
+.projects img {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.projects .vr {
+    border-bottom: 2px solid greenyellow;
+    width: 170px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.projects h3 {
+    font-size: 30px;
+}
+
+.projects p {
+    width: 70%;
+    margin: auto;
+}
+
+.projects .container p {
+    width: 95%;
+    margin: auto;
+}
+
+/*statistics*/
+#statistics {
+    color: #616161;
+    background-image: linear-gradient(90deg, rgba(4, 9, 30, 0.7), rgba(92, 102, 140, 0.7)), url(../img/statistics-background.jpeg);
+    background-size: cover;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 0.5px solid white;
+}
+
+#statistics .container {
+    width: 65%;
+    margin: auto;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+#statistics .box-statistics {
+    width: 240px;
+    margin: 30px 15px;
+
+}
+
+#statistics .box-statistics:hover {
+    /* border: dashed greenyellow;
+    border-radius: 5px;
+    transition: 0.1s; */
+
+}
+
+#statistics .container h2 {
+    font-size: 20px;
+
+}
+
+#statistics .container .description {
+    color: greenyellow;
+    font-size: 30px;
+    margin: 13px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#statistics .container .description i {
+    padding-right: 20px;
+
+}
+
+/*contact*/
+.contacts {
+    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('../img/contact.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 60px;
+    color: white;
+}
+
+.contacts .container {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contacts h1 {
+    font-size: 35px;
+    margin-bottom: 45px;
+}
+
+.contact p {
+    width: 80%;
+    margin: auto;
+    font-size: 15px;
+}
+
+.contacts button {
+    margin-top: 20px;
+    padding: 14px 19px;
+    font-weight: bold;
+    font-size: 13px;
+    border: 0.2px greenyellow solid;
+    border-radius: 0px;
+    color: white;
+    cursor: pointer;
+    background: greenyellow;
+
+}
+
+.contacts button:hover {
+    border-color: white;
+}
+
+/*nos partenaires*/
+#partenaires {
+    color: #616161;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 0.5px solid white;
+}
+
+#partenaires .container {
+    width: 90%;
+    margin: auto;
+    margin-top: 90px;
+    margin-bottom: 90px;
+
+
+}
+
+#partenaires .container h1 {
+    font-size: 50px;
+    margin-bottom: 100px;
+}
+
+#partenaires .partenaires-logos {
+    height: 90px;
+}
+
+#partenaires .partenaires-logos div {
+    margin: 0px 40px;
+}
+
+#partenaires img {
+    width: 120px;
+    height: 70px;
+    margin-right: 190px;
+}
+
+#partenaires img:hover {
+    width: 150px;
+    height: 90px;
+    transition: 0.3s;
+}
+
+/*footer*/
+/*footer*/
+footer {
+    bottom: 0px;
+    width: 100%;
+    color: whitesmoke;
+    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    bottom: 0;
+    overflow: hidden;
+}
+
+footer .main-content {
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    line-height: 2rem;
+    border-bottom: 0.5px solid white;
+}
+
+footer .main-content img {
+    margin-bottom: 20px;
+}
+
+footer .main-content h2 {
+    margin: 30px 0px;
+    color: whitesmoke;
+}
+
+.main-content .left-box {
+    margin-right: 30px;
+    width: 350px;
+    margin-bottom: 30px;
+
+}
+
+.main-content .center-box {
+    margin-right: 30px;
+    width: 150px;
+    margin-bottom: 30px;
+}
+
+
+.main-content .right-box {
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+
+.left-box img {
+    display: block;
+    margin: auto;
+}
+
+.main-content .social {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main-content .social a {
+    margin-right: 25px;
+    font-size: 20px;
+
+}
+
+.main-content .social a:hover {
+    color: greenyellow;
+
+}
+
+.main-content .links a:hover {
+    color: greenyellow;
+}
+
+.main-content .fa-solid {
+    margin-right: 10px;
+}
+
+.copyright {
+    margin: 12px 0px;
+    text-align: center;
+}
+
+
+
+
+
+@media (max-width: 850px) {
+    #showcase h1 {
+        font-size: 62px;
+        line-height: 4rem;
+    }
+    nav ul {
+        display: block;
+    }
+    nav {
+        position: absolute;
+        background: greenyellow;
+        height: 250px;
+        width: 150px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+    }
+    .vl {
+        display: none;
+    }
+    nav .fa-solid {
+        display: block;
+        margin: 12px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    nav .icon {
+        display: flex;
+        align-items: center;
+    }
+}
